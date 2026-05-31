@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Книжник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Книжник</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами любым удобным способом</p>
+        </section>
+
+        <section class="contacts-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Книжная, д. 10</p>
+                    <p>м. «Читайская»</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Телефон</h3>
+                    <p>+7 (999) 123-45-67</p>
+                    <p>Ежедневно с 10:00 до 21:00</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>support@knizhnik.ru</p>
+                    <p>zakaz@knizhnik.ru (для заказов)</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Соцсети</h3>
+                    <p>Instagram: @knizhnik_books</p>
+                    <p>Telegram: @knizhnik_support</p>
+                    <p>VK: vk.com/knizhnik</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Напишите нам</h3>
+                <form id="feedback-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <textarea rows="4" placeholder="Сообщение..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+                <p id="form-message" style="margin-top: 10px; color: green; display: none;">Спасибо! Мы свяжемся с вами.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>служба поддержки: support@knizhnik.ru</p>
+    </footer>
+
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('form-message').style.display = 'block';
+            this.reset();
+            setTimeout(() => {
+                document.getElementById('form-message').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

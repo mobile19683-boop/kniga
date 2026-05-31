@@ -49,3 +49,103 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.about-content {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.about-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.about-card h3 {
+    color: rgb(159, 131, 185);
+    margin-bottom: 0.5rem;
+}
+
+
+.contacts-content {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    color: rgb(159, 131, 185);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    background: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    margin-bottom: 1rem;
+    color: rgb(159, 131, 185);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: rgb(159, 131, 185);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(130, 100, 160);
+}
+.book-image {
+    width: 100px;
+    height: 150px;
+    background-color: blanchedalmond;
+    margin-right: 1rem;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
